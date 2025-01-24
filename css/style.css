@@ -229,6 +229,7 @@ footer {
 /* interdit de modifier le contenu au-dessus */
 @media (min-width: 768px) {
     header {
+        position: static;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -239,7 +240,6 @@ footer {
 
         nav {
             display: block;
-
             ul {
                 list-style: none;
                 display: flex;
@@ -251,6 +251,15 @@ footer {
                     &:hover {
                         text-decoration: underline;
                     }
+                }
+            }
+            &.open {
+                position: static;
+                border:none;
+                width: auto;
+                padding:0;
+                li {
+                    margin-bottom: 0;
                 }
             }
         }
